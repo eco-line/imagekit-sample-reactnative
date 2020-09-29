@@ -8,22 +8,15 @@ import getStyleSheet from './styles';
 function Main({ navigation }) {
 	let styleSheet = getStyleSheet({});
 
-	let textCssProps = {
-		fontSize : 30
-	}
-	let buttonCssProps = {
-		width : 300
-	}
-
 	return (
 		<>
 			<View style={styleSheet.headContainer}>
-				<Text cssProps={textCssProps}>Imagekit Demo</Text>
+				<Text cssProps={styleSheet.textCssProps}>Imagekit Demo</Text>
 			</View>
 			<View style={styleSheet.btnContainer}>
 				<View style={styleSheet.btnView}>
 					<Button 
-						cssProps={buttonCssProps} 
+						cssProps={styleSheet.buttonCssProps} 
 						onPress={() => Alert.alert('Simple Button pressed1')}
 					>
 						Upload Image
@@ -31,7 +24,7 @@ function Main({ navigation }) {
 				</View>
 				<View style={styleSheet.btnView}>
 					<Button 
-						cssProps={buttonCssProps} 
+						cssProps={styleSheet.buttonCssProps} 
 						onPress={() => Alert.alert('Simple Button pressed2')}
 					>
 						Upload File
@@ -39,8 +32,8 @@ function Main({ navigation }) {
 				</View>
 				<View style={styleSheet.btnView}>
 					<Button 
-						cssProps={buttonCssProps} 
-						onPress={() => navigation.navigate('Fetch')}
+						cssProps={styleSheet.buttonCssProps} 
+						onPress={() => navigation.navigate('Fetch Images')}
 					>
 						Fetch Images
 					</Button>

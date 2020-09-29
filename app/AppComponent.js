@@ -14,7 +14,7 @@ function AppComponent() {
 				component={Main}
 			/>
 			<Stack.Screen 
-				name="Fetch" 
+				name="Fetch Images" 
 				component={Fetch} 
 			/>
 		</Stack.Navigator>

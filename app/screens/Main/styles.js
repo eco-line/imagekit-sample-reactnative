@@ -15,6 +15,12 @@ function getStyleSheet(cssProps){
 		btnView : {
 			marginTop : 10,
 			marginBottom : 10
+		},
+		buttonCssProps : {
+			width : 300
+		},
+		textCssProps : {
+			fontSize : 30
 		}
 	})
 }
