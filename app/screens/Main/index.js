@@ -17,15 +17,7 @@ function Main({ navigation }) {
 				<View style={styleSheet.btnView}>
 					<Button 
 						cssProps={styleSheet.buttonCssProps} 
-						onPress={() => Alert.alert('Simple Button pressed1')}
-					>
-						Upload Image
-					</Button>
-				</View>
-				<View style={styleSheet.btnView}>
-					<Button 
-						cssProps={styleSheet.buttonCssProps} 
-						onPress={() => Alert.alert('Simple Button pressed2')}
+						onPress={() => navigation.navigate('Upload File')}
 					>
 						Upload File
 					</Button>

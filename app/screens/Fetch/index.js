@@ -152,14 +152,14 @@ function Fetch() {
 								height: 300,
 							}}
 						/> 
-						<View style={styleSheet.imgCaptionView}>
+						<View style={styleSheet.captionView}>
 							{
 								currentTr ? 
 								<Text>{currentTr}</Text> : 
 								<Text>Image with no Transformation</Text>
 							}
 						</View>
-						<View style={styleSheet.imgCaptionView}>
+						<View style={styleSheet.captionView}>
 							<Text>Rendered URL - {imageUrl}</Text>
 						</View>
 					</>

@@ -22,7 +22,7 @@ function getStyleSheet(cssProps){
 		buttonCssProps : {
 			width : 150
 		},
-		imgCaptionView : {
+		captionView : {
 			marginTop : 10
 		}
 	})
